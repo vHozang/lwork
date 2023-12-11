@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Afacad&display=swap");
+
+* {
+  height: auto;
+  width: auto;
+}
+
+body {
+  padding: 20px;
+}
+
+.item {
+  background-color: gray;
+  border: 1px solid black;
+  min-height: 50px;
+}
+
+.container {
+
+  display: grid;
+  height: 1000px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: minmax(60px, auto);
+  grid-template-areas:
+    "home home home"
+    "side content content"
+    "side comment comment"
+    "footer footer footer"
+}
+
+.item1 {
+  grid-area: home;
+}
+
+.item2 {
+  grid-area: side;
+}
+
+.item3 {
+  grid-area: content;
+}
+
+.item4 {
+  grid-area: comment;
+}
+
+.item5 {
+  grid-area: footer;
+}
